@@ -16,8 +16,5 @@ To run the calculator code, you need to have Python installed on your system. Yo
 Contributing:
 Contributions are welcome! If you have any suggestions or improvements, please open an issue or submit a pull request.
 
-License:
-This project is licensed under the MIT License. See the LICENSE file for details.
-
 Contact:
 If you have any questions or feedback, feel free to contact me at neevarp02082003@gmail.com.
