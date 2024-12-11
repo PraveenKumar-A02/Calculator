@@ -1,47 +1,89 @@
-*******Simple Calculator*******
+# Calculator Application (Java OOP)
 
-A basic command-line calculator implemented in Python. 
-This calculator supports four fundamental operations: addition, subtraction, multiplication, and division.
+This is a simple **Calculator Application** implemented in Java using Object-Oriented Programming (OOP) principles. The program supports basic arithmetic operations such as addition, subtraction, multiplication, and division.
 
-Features
+## Features
 
- --> Addition: Adds two numbers.
- --> Subtraction: Subtracts the second number from the first number.
- --> Multiplication: Multiplies two numbers.
- --> Division: Divides the first number by the second number.
- --> Continue Calculation: Option to continue calculating with the result of the previous operation.
- 
-Prerequisites
+- User-friendly console-based interaction.
+- Implements OOP concepts such as interfaces and classes.
+- Handles invalid operations and division by zero gracefully.
+- Allows users to chain calculations or start new ones.
 
- * Python 3.x
+## How It Works
 
-Usage
+1. The user enters the first number.
+2. The available operations (`+`, `-`, `*`, `/`) are displayed.
+3. The user picks an operation and provides the next number.
+4. The result is calculated and displayed.
+5. The user can choose to continue with the result or start a new calculation.
 
-1. Clone the repository or download the source code.
-2. Open a terminal or command prompt.
-3. Run the calculator.py script using Python:
-    ------python calculator.py------
+## Classes and Structure
 
-4. Follow the prompts to enter numbers and select operations.
+### 1. **`Operation` Interface**
+Defines the method `execute` which performs the operation.
 
-Code Overview
+### 2. **Concrete Classes**
+Implements the `Operation` interface for specific operations:
+- `Addition`: Adds two numbers.
+- `Subtraction`: Subtracts the second number from the first.
+- `Multiplication`: Multiplies two numbers.
+- `Division`: Divides the first number by the second, with a check for division by zero.
 
- * Functions: Defines basic arithmetic functions (plus, minus, multiply, divide).
- * Operations Dictionary: Maps operation symbols to their corresponding functions.
- * calculator Function: Handles the main logic of the calculator, including user input, performing calculations, and continuing or restarting calculations.
- * Clear Console: Uses replit.clear() to clear the console (you may need to modify this based on your environment).
+### 3. **`Calculator` Class**
+- Handles user interaction and drives the program.
+- Implements the logic for chaining calculations or restarting.
 
-What's the first number?: 5
-+
--
-*
-/
+## Prerequisites
+
+- **Java Development Kit (JDK)**: Ensure JDK 8 or above is installed.
+- A code editor or IDE such as IntelliJ IDEA, Eclipse, or VS Code.
+
+## How to Run
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/your-username/calculator.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd calculator-oop-java
+   ```
+3. Compile the code:
+   ```bash
+   javac Calculator.java
+   ```
+4. Run the application:
+   ```bash
+   java Calculator
+   ```
+
+## Example Output
+
+```
+Start calculation....
+What's the first number?: 10
+Available operations: + - * /
 Pick an operation: +
-What's the next number?: 3
-5.0 + 3.0 = 8.0
-Type "y" to continue calculating with 8.0, or type "n" to start a new calculation: n
+What's the next number?: 5
+10.0 + 5.0 = 15.0
+Type "y" to continue calculating with 15.0, or type "n" to start a new calculation: n
+Starting a new calculation...
+```
 
+## Error Handling
 
+- Division by zero is not allowed and will throw an `ArithmeticException` with a descriptive message.
+- Invalid operations prompt the user to re-enter a valid one.
 
-License
- - This project is licensed under the MIT License - see the LICENSE file for details.
+## Contribution
+
+Contributions are welcome! Feel free to submit a pull request or open an issue for improvements or bug fixes.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+Happy coding! 😊
+
