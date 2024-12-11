@@ -42,7 +42,7 @@ Implements the `Operation` interface for specific operations:
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/calculator.git
+   git clone https://github.com/PraveenKumar-A02/Calculator.git
    ```
 2. Navigate to the project directory:
    ```bash
